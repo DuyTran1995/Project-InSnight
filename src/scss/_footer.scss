@@ -1,0 +1,114 @@
+.footer{
+    padding-top: 1em;
+    .container{
+        .row{
+            .flexCard{
+                display: flex;
+                justify-content: space-around;
+                .footer-flexCard-content{
+                    font-family: 'Open Sans', sans-serif;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        padding: .5em 35px;
+                        font-size: 12px;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    .title{
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    .content{
+                        font-weight: 400;
+                    }
+                }
+            }
+            .footer-right{
+                padding-top: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                .social{
+                    i{
+                        margin-left: 1em;
+                    }
+                }
+                .footer-right-bottom{
+                    font-size: 12px;
+                    margin: 0;
+                    p{
+                        margin: 1em 0;
+                        font-weight: 400;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    .happy{
+                        margin-bottom: 0.5em;
+                        text-align: center;
+                    }
+                    .policy{
+                        display: inline-block;
+                        margin-right: .5em;
+                    }
+                    .ofservices{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .footer{
+        .container{
+            .row{
+                .flexCard{
+         
+                    .footer-flexCard-content{
+                  
+                        a{
+            
+                            &:hover{
+                 
+                            }
+                        }
+                        .title{
+               
+                        }
+                        .content{
+           
+                        }
+                    }
+                }
+                .footer-right{
+                    align-items: flex-end;
+                    padding: 0;
+                    .social{
+                        i{
+                
+                        }
+                    }
+                    .footer-right-bottom{
+            
+                        p{
+               
+                        }
+                        .happy{
+                            text-align: right;
+                        }
+                        .policy{
+               
+                        }
+                        .ofservices{
+           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+extends ../layouts/layout.pug 
+include ../mixin/card-hover-banner.pug
+include ../mixin/main-flexCard.pug
+include ../mixin/bottom-flexCard.pug
+block header
+    .header
+        .container
+            .row
+                .content-banner.col-12
+                    h1.white Don't ignore your dreams
+                    h3.white 
+                        span.white The 5 regrets
+                        | paint a portrait of post-industrial man, who shrinks 
+                    h3.white
+                        |himself into a shape that fits his circumstances, then turns
+                    h3.white
+                        |dutifully till he stops.
+                    a.btnPrimary.white.bgColor-btnGreen(href="#") See how it works
+                    a.btnSecondary.white.bgColor-btnBlue(href="#") Join us
+
+
+                .content-hover.col-12
+                    .hoverBanner.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                        .items-dream.white
+                        +card-hoverBanner("Dreams","He alarming thing is, the mistakes that produce these regrets are all errors of omission.")
+                    .hoverBanner.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                        .items-work.white
+                        +card-hoverBanner("Work","Errors of omission are a particularly dangerous type of mistake, because you make them by default.")
+                    .hoverBanner.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                        .items-friendship.white
+                        +card-hoverBanner("Friendship","You forget your dreams, ignore your family, suppress your feelings, neglect your friends, and forget to be happy.")
+                    //- .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+block main-content
+    .main-content
+        .container
+            .row
+                .main-flexCard
+                    img.img-main-flexCard(src="../asset/main-flexCard-1.png", alt="")
+                    .bottom-main-flexCard.row
+                        img.ava-main-flexCard(src="../asset/main-flexCard-1-ava.png", alt="")
+                        .bottom-content-main-flexCard
+                            +main-flexCard("You neglect your friends","Valerie Adams. Moldova. 19.")
+                .main-flexCard
+                    img.img-main-flexCard(src="../asset/main-flexCard-2.png", alt="")
+                    .bottom-main-flexCard.row
+                        img.ava-main-flexCard(src="../asset/main-flexCard-2-ava.png", alt="")
+                        .bottom-content-main-flexCard
+                            +main-flexCard("You forget your dreams","Robert. Italy. 38.")
+                .main-flexCard
+                    img.img-main-flexCard(src="../asset/main-flexCard-3.png", alt="")
+                    .bottom-main-flexCard.row
+                        img.ava-main-flexCard(src="../asset/main-flexCard-3-ava.png", alt="")
+                        .bottom-content-main-flexCard
+                            +main-flexCard("You suppress your feelings","Sergei. Italy. 38.")
+    .bottom-content
+        .container
+            .row
+                .bottom-flexCard.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    .ava-bottom-flexCard
+                        img(src="../asset/bottom-flexCard-ava-1.png", alt="")
+                    .bottom-flexCard-content
+                        +bottom-flexCard("Oct 18","I would like to avoid making these mistakes.")
+                .bottom-flexCard.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    .ava-bottom-flexCard
+                        img(src="../asset/bottom-flexCard-ava-2.png", alt="")
+                    .bottom-flexCard-content
+                        +bottom-flexCard("Oct 8","But how do you avoid mistakes you make by default?")
+                .bottom-flexCard.col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4
+                    .ava-bottom-flexCard
+                        img(src="../asset/bottom-flexCard-ava-3.png", alt="")
+                    .bottom-flexCard-content
+                        +bottom-flexCard("Oct 2","Ideally you transform your life so it has other defaults.")
+block client
+    .client.bgColor-client
+        .container
+            .row
+                p.featuredone.textflexCard Featured on:
+                p.new.tan New
+                p.texas.tan Texas
+                p.time.tan Time
+                p.wooden.tan Wooden
+                p.vremya.tan Vremya
+                p.openbook.tan Open Book
+                <i class="fab fa-twitter tan"></i>
+
+block footer
+    .footer.bgColor-navAndfooter
+        .container
+            .row
+                .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                    .flexCard
+                        .footer-flexCard-content
+                            a(href="#").white.title main
+                            a(href="#").content.tan start here
+                            a(href="#").content.tan porfolio
+                            a(href="#").content.tan meet us
+                            a(href="#").content.tan blog
+                            a(href="#").content.tan contact
+                        .footer-flexCard-content
+                            a(href="#").white.title company
+                            a(href="#").content.tan about
+                            a(href="#").content.tan help
+                            a(href="#").content.tan support
+                            a(href="#").content.tan jobs
+                            a(href="#").content.tan directory
+                        .footer-flexCard-content
+                            a(href="#").white.title one more
+                            a(href="#").content.tan meet up
+                            a(href="#").content.tan handbook
+                            a(href="#").content.tan privacy
+                            a(href="#").content.tan api
+                            a(href="#").content.tan equipment
+                        .footer-flexCard-content
+                            a(href="#").white.title the last one
+                            a(href="#").content.tan meet up
+                            a(href="#").content.tan handbook
+                            a(href="#").content.tan privacy
+                            a(href="#").content.tan api
+                            a(href="#").content.tan equipment
+                .footer-right.col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                    .social
+                        <i class="white fab fa-twitter"></i>
+                        <i class="white fab fa-facebook-f"></i>
+                        <i class="white fab fa-vimeo-v"></i>
+                    .footer-right-bottom
+                        p.tan.happy @2013 be happy
+                        p.tan.policy Privacy Policy
+                        p.tan.ofservices TermsofServices
+    

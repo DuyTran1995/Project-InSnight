@@ -1,0 +1,165 @@
+.main-content{
+    padding-top: 80px;
+    padding-bottom: 70px;
+    .container{
+        .row{
+            justify-content: space-between;
+            .main-flexCard{
+                border: 1px solid rgba($color: #000000, $alpha: .2);
+                border-radius: .25rem;
+                width: 100%;
+                position: relative;
+                margin-bottom: 2em;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    height: 20px;
+                    left: 0;
+                    right: 0;
+                    bottom: -6px;
+                    box-shadow: 0 1px 1px rgba($color: #000000, $alpha: .2),
+                    0 8px 0px -3px #fff,
+                    0 9px 1px -3px rgba($color: #000000, $alpha: .2),
+                    0 14px 0px -3px #fff,
+                    0 15px 1px -3px rgba($color: #000000, $alpha: .2);
+                    border-radius: .25rem;
+                }
+                .img-main-flexCard{
+                    width: 100%;
+                }
+                .bottom-main-flexCard{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-left: 1em;
+                }
+                .bottom-main-flexCard{
+                    margin-top: 15px;
+                    .ava-main-flexCard{
+                        img{
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                    .bottom-content-main-flexCard{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-content: flex-start;
+                        p{
+                            margin: 0;
+                            margin-left: 1em;
+                            font-size: 16px;
+                            font-family: 'Open Sans', sans-serif;
+                        }
+                        .title-mainCard{
+                            font-size: 16px;
+                            color: $text-flexCard;
+                        }
+                        .info-mainCard{
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.bottom-content{
+    padding: 35px 0;
+    border: 3px solid #e7e7e7;
+    .container{
+        .row{
+            .bottom-flexCard{
+                display: flex;
+                align-items: center;
+                margin-bottom: 2em;
+                .ava-bottom-flexCard{
+                    width: 90px;
+                    height: 90px;
+                    display: block;
+                }
+                .bottom-flexCard-content{
+                    margin-left: 25px;
+                    p,h3{
+                        margin: 0;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    .date-bottom-flexCard{
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 400;
+                    }
+                    .content-bottom-flexCard{
+                        font-size: 16px;
+                        color: $text-flexCard;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .main-content{
+  
+        .container{
+            .row{
+        
+                .main-flexCard{
+                    width: 30%;
+                    margin: 0;
+                    &:before{
+       
+                    }
+                    .img-main-flexCard{
+          
+                    }
+                    .bottom-main-flexCard{
+            
+                    }
+                    .bottom-main-flexCard{
+               
+                        .ava-main-flexCard{
+                
+                        }
+                        .bottom-content-main-flexCard{
+                            p{
+               
+                            }
+                            .title-mainCard{
+
+                            }
+                            .info-mainCard{
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-content{
+
+        .container{
+            .row{
+                .bottom-flexCard{
+                    margin: 0;
+                    .ava-bottom-flexCard{
+
+                    }
+                    .bottom-flexCard-content{
+                        p,h3{
+
+                        }
+                        .date-bottom-flexCard{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Map-merge Color
+$white: #ffffff;
+$tan: #7c7d7f;
+$navAndfooter: #1a1e25;
+$hoverNav: #068fd5;
+$btnGreen: #83c129;
+$btnBlue: #068fd5;
+$colorNamecard: #8e959c;
+$colorDatecard: #abb1bb;
+$text-flexCard: #454e5c;
+$client: #f2efe9;
+
+$color: ()!default;
+$color: map-merge((
+    "white": $white,
+    "tan": $tan,
+    "navAndfooter": $navAndfooter,
+    "hoverNav":  $hoverNav,
+    "btnGreen":  $btnGreen,
+    "btnBlue": $btnBlue,
+    "colorNamecard": $colorNamecard,
+    "colorDatecard": $colorDatecard,
+    "textflexCard": $text-flexCard,
+    "client": $client,
+),$color);
+@each $color-name, $color in $color{
+    .#{$color-name}{
+        color: $color;
+    }
+}
+@each $bgColor-name, $Bgcolor in $color{
+    .bgColor-#{$bgColor-name}{
+        background-color: $Bgcolor;
+    }
+}
+// Map merge Text-align
+$left: left;
+$center: center;
+$right: right;
+
+$text-algin: ()!default;
+$text-algin: map-merge((
+    "left": $left,
+    "center": $center,
+    "right": $right,
+),$text-algin);
+@each $align-name, $align in $text-algin {
+    .text-#{$align-name}{
+        text-align: $align;
+    }
+}
+
+
+
+
